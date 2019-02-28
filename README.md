@@ -37,8 +37,9 @@ file with some meta-data.
   * **Link:** if desired.
 
 You can find an example in the `example` folder. It contains four images for the
-`Reichstag` dataset, for which we have extracted features and matches. Let's
-consider a toy set with only four images:
+`reichstag` dataset, for which we have extracted features with SIFT and matches
+using simple nearest-neighbour matching. Let's consider a toy set with only four
+images:
 
 ```bash
 $ ls imw2019-test/reichstag
@@ -52,7 +53,9 @@ A local-feature based submission will require a list of keypoints and
 descriptors:
 
 ```bash
-$ cd example-submission/reichstag
+$ cd example; tar xvf submission-example.tar.gz > /dev/null
+
+$ cd submission-example/reichstag
 
 $ ls keypoints
 06373813_9127207861.h5
@@ -87,8 +90,8 @@ array([[338.39126587, 413.37594604],
 ```
 
 Descriptors are stored in a separate file but should be consistent with the list
-of keypoints. We expect them to be stored in a floating format, and use the L2
-distance for comparisons. If you require a different set-up (e.g. binary
+of keypoints. We expect them to be stored in a floating point format, and use
+the L2 distance for comparisons. If you require a different set-up (e.g. binary
 descriptors and the Hamming distance) please specify it when you contact us.
 
 ```
@@ -114,9 +117,9 @@ array([ 80.,   6.,   3.,  73.,  33.,   0.,   0.,   2., 154.,  50.,   9.,
 ```
 
 If you want to specify your own matches, you will have to provide files matching
-every possible pair of images in each sequence. Please create the pairwise h5 files
-following the `LARGEST_KEY-SMALLEST_KEY.h5` convention, as seen in the examples
-above.
+every possible pair of images in each sequence. Please create the pairwise h5
+files following the `LARGEST_KEY-SMALLEST_KEY.h5` convention, without
+duplicates. For instance, for this toy set the list would contain six files:
 
 ```bash
 $ ls matches
@@ -132,7 +135,7 @@ Please note that this is only meant to generate a list of putative matches from
 the NxN possible matches. Our default strategy is nearest neighbour matching
 from the first image to the second. The list will be processed by robust
 matching strategies such as RANSAC afterwards.
-The format is as follows:
+The format of a matches file is as follows:
 
 ```
 >>> f = h5py.File('../matches/63790741_1504116525-06373813_9127207861.h5', 'r')

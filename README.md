@@ -138,7 +138,7 @@ matching strategies such as RANSAC afterwards.
 The format of a matches file is as follows:
 
 ```
->>> f = h5py.File('../matches/63790741_1504116525-06373813_9127207861.h5', 'r')
+>>> f = h5py.File('matches/63790741_1504116525-06373813_9127207861.h5', 'r')
 [k for k in f]
 ['matches']
 >>> f['matches'].shape

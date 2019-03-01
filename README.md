@@ -90,7 +90,7 @@ $ ls descriptors
 92481126_2062182859.h5
 ```
 
-Keypoints should contain an array with N keypoints with 0-indexed (y, x)
+Keypoints should contain an array with N keypoints with 0-indexed (x, y)
 coordinates, with the origin in the top left corner. We do not use keypoint
 score, orientation or scale but feel free to include that information in the
 array if you want.
@@ -103,9 +103,9 @@ array if you want.
 >>> f['keypoints'].shape
 (512, 2)
 >>> f['keypoints'][:3]
-array([[338.39126587, 413.37594604],
-       [428.95111084, 332.44958496],
-       [452.37286377, 982.00183105]])
+array([[413.37594604, 338.39126587],
+       [332.44958496, 428.95111084],
+       [982.00183105, 452.37286377]])
 
 ```
 

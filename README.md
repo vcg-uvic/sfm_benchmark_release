@@ -122,9 +122,8 @@ distance) please specify it when you contact us.
 
 If you want to specify your own matches, you will have to provide matches for
 every possible pair of images in each sequence. The match file should contain a
-key for every match using the convention `LARGEST_KEY-SMALLEST_KEY.h5`, without
-duplicates. For instance, for this toy set the file would contain six keys, as
-follows:
+key for every match using the convention `LARGEST_KEY-SMALLEST_KEY`. For
+instance, for this toy set the file would contain six keys, as follows:
 
 ```
 >>> import h5py
@@ -153,8 +152,9 @@ first key and the second key, such that:
 
 So that keypoint 0 in `63790741_1504116525.jpg` matches with keypoint 398 in
 `06373813_9127207861.jpg` and so on. If this list is not specified, we will use
-simple nearest neighbour matching as a default strategy.  In either case, this
-will be followed by robust matching strategies (RANSAC or SfM with COLMAP).
+simple nearest neighbour matching as the default strategy. Whether matches are
+provided or not, this will be followed by robust matching strategies (RANSAC or
+SfM with COLMAP).
 
 The instructions to submit poses for the stereo track will be published after
 the first edition of the challenge.

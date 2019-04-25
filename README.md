@@ -53,7 +53,7 @@ file with some meta-data.
   * **Details.** description of the method.
   * **Task:** stereo, mvs, or both.
   * **Type:** F (features), M (matches) or P (poses). For sparse methods, F and M
-      are possible, in which case we'll generate our matches from your features in addition to the matches you provide and evaluate both variants.
+      are possible, in which case we'll generate our matches from your features in addition to the matches you provide and evaluate both variants. Dense methods which retrieve the pose directly (P) will be allowed in future editions of the challenge, please contact the organizers if you are interested.
   * **List of authors:** this information is mandatory, please specify if you wish the
       submission to be anonymous.
   * **Contact e-mail:** please note that it will be listed in the website (unless
@@ -156,5 +156,6 @@ So that keypoint 0 in `63790741_1504116525.jpg` matches with keypoint 398 in
 simple nearest neighbour matching as a default strategy.  In either case, this
 will be followed by robust matching strategies (RANSAC or SfM with COLMAP).
 
-The instructions to submit poses for the stereo track will be published soon,
-please stay tuned or inquire directly.
+The instructions to submit poses for the stereo track will be published after
+the first edition of the challenge.
+

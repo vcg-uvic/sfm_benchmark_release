@@ -56,8 +56,8 @@ file with some meta-data.
       are possible, in which case we'll generate our matches from your features in addition to the matches you provide and evaluate both variants. Dense methods which retrieve the pose directly (P) will be allowed in future editions of the challenge, please contact the organizers if you are interested.
   * **List of authors:** this information is mandatory, please specify if you wish the
       submission to be anonymous.
-  * **Contact e-mail:** please note that it will be listed in the website (unless
-      the submission is anonymous).
+  * **Contact e-mail:** Please specify a contact address. We will not publish it
+      if you wish to remain anonymous.
   * **Link:** if desired.
 
 You can find an example of a mock submission in the `example` folder. It

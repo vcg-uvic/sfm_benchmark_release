@@ -82,7 +82,7 @@ descriptors, and optionally the matches:
 ```bash
 $ cd example; tar xvf submission-example.tar.gz > /dev/null
 
-$ cd submission-example/reichstag
+$ cd submission-example/reichstag/your_method
 
 $ ls
 descriptors.h5  keypoints.h5  matches.h5
@@ -130,7 +130,7 @@ instance, for this toy set the file would contain six keys, as follows:
 
 ```
 >>> import h5py
->>> with h5py.File('matches.ht') as f 
+>>> with h5py.File('matches.h5') as f 
 >>>     for k, v in f.items():
 >>>         print((k, v.shape))
 
@@ -146,7 +146,7 @@ Each of these entries stores a list of matches between the image encoded by the
 first key and the second key, such that:
 
 ```
->>> with h5py.File('reichstag/matches.h5') as f:
+>>> with h5py.File('matches.h5') as f:
 >>>    print(f['63790741_1504116525-06373813_9127207861'].value)
 
 [[  0   1   2 ... 509 510 511]

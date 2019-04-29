@@ -54,13 +54,13 @@ When submitting, please zip the results into a single file along with a text
 file with some meta-data.
   * **Method name:** should be short.
   * **Details.** description of the method.
-  * **Task:** stereo, mvs, or both.
-  * **Type:** F (features), M (matches) or P (poses). For sparse methods, F and M
+  * **Type:** F (features), M (matches) or P (poses, currently unavailable). For sparse methods, F and M
       are possible, in which case we'll generate our matches from your features in addition to the matches you provide and evaluate both variants. Dense methods which retrieve the pose directly (P) will be allowed in future editions of the challenge, please contact the organizers if you are interested.
+  * **Descriptor dimensionality:** e.g. 128 float32, 256 uint8.
   * **List of authors:** this information is mandatory, please specify if you wish the
       submission to be anonymous.
   * **Contact e-mail:** Please specify a contact address. We will not publish it
-      if you wish to remain anonymous.
+      if you wish to remain anonymous but we need it to get back to you.
   * **Link:** if desired.
 
 You can find an example of a mock submission in the `example` folder. It

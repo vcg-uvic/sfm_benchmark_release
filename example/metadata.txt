@@ -1,0 +1,33 @@
+*** METHOD NAME ***
+
+E.g. "SIFT". This is used as the key for the leaderboards so please be succint.
+
+*** DETAILS ***
+
+This is an example file to show how to format submissions for the IMW2019 image
+matching challenge. Line-breaks are fine. Be as detailed as you want. Do not use
+any type of text-formatting or include hyperlinks.
+
+*** TASK ***
+
+F and M
+
+*** DESCRIPTOR SIZE ***
+
+Please specify the dimension of the descriptor, such as "128 float32" or "256
+uint8".  This is just used for the metadata published on the website, no need to
+actually convert the descriptors (e.g. uint8 stored as float32 is fine).
+
+*** LIST OF AUTHORS ***
+
+Please indicate if you wish your submission to be anonymous.
+
+*** CONTACT DATA ***
+
+Submissions without a valid e-mail will not be considered (we need to be able to
+get back to you). It will not be published on the website if you wish to remain
+anonymous.
+
+*** LINK ***
+
+https://cdn.dribbble.com/users/110294/screenshots/2132978/monkey_160_anim_gif.gif

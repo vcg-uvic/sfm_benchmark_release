@@ -87,7 +87,7 @@ descriptors, and optionally the matches:
 ```bash
 $ cd example; tar xvf submission-example.tar.gz > /dev/null
 
-$ cd submission-example/reichstag/your_method
+$ cd submission-example/reichstag
 
 $ ls
 descriptors.h5  keypoints.h5  matches.h5

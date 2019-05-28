@@ -167,3 +167,7 @@ SfM with COLMAP).
 The instructions to submit poses for the stereo track will be published after
 the first edition of the challenge.
 
+# Known issues
+
+- The pairs file for the training data for the Prague dataset is missing. We will get around to regenerating it at some point, but for now feel free to skip it, or just re-generate it with your preferred visibility constraint (we do something quite naive).
+- If you encounter problems opening the pairs files (saved with deepdish) please check if [this issue](https://github.com/vcg-uvic/sfm_benchmark_release/issues/1) might help you.

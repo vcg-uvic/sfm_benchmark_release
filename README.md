@@ -14,7 +14,7 @@ details on the current edition please refer to the website:
 
 # Downloading the data
 
-* [Download link for the training data: 127 Gb](http://https://gfx.uvic.ca/nextcloud/index.php/s/75JNSoggacQhOkQ)
+* [Download link for the training data: 127 Gb](https://gfx.uvic.ca/nextcloud/index.php/s/75JNSoggacQhOkQ)
 * [Download link for the test data: 450 Mb](http://webhome.cs.uvic.ca/~kyi/files/2019/image-matching/imw2019-test.tar.gz)
 
 # Resources for reading the training data

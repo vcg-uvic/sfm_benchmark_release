@@ -1,7 +1,9 @@
 # Image Matching: Local Features and Beyond: Phototourism dataset
 
+**Information here may be outdated. Please see [the new website](https://vision.uvic.ca/image-matching-challenge/) before reading anything below**
+
 **The submission format has changed slightly as of April 24, 2019. Please follow
-the current instructions if you plan to submit a new entry.**
+the [current instructions](https://vision.uvic.ca/image-matching-challenge/submit/) if you plan to submit a new entry.**
 
 This repository contains source code and instructions to access the data and
 format submissions for the Phototourism dataset published as part of the IMW2019
@@ -9,13 +11,12 @@ Challenge. The challenge will remain open after the workshop takes place. For
 details on the current edition please refer to the website:
 
 * [CVPR 2019 workshop on Image Matching: Local Features and Beyond](https://image-matching-workshop.github.io)
-* [Phototourism dataset: description, tasks, and download links](https://image-matching-workshop.github.io/challenge)
-* [Leaderboards](https://image-matching-workshop.github.io/leaderboard)
+* [Phototourism dataset: description, tasks, and download links](https://vision.uvic.ca/image-matching-challenge/)
+* [Leaderboards](https://vision.uvic.ca/image-matching-challenge/leaderboard/)
 
 # Downloading the data
 
-* [Download link for the training data: 127 Gb](https://gfx.uvic.ca/nextcloud/index.php/s/75JNSoggacQhOkQ)
-* [Download link for the test data: 450 Mb](http://webhome.cs.uvic.ca/~kyi/files/2019/image-matching/imw2019-test.tar.gz)
+* [Data website](https://vision.uvic.ca/image-matching-challenge/data/)
 
 # Resources for reading the training data
 
@@ -26,9 +27,9 @@ please check `parse_data.ipynb`. Dependencies are given in `deps.txt`.
 
 Results can be submitted here:
 
-* [Submission link](https://gfx.uvic.ca/nextcloud/index.php/s/1z3K0JzRY4w2cfk)
+* [Submission link](https://vision.uvic.ca/image-matching-challenge/submit/)
 
-The submission website is password-protected to prevent abuse, please contact
+The submission link is password-protected to prevent abuse, please contact
 the organizers at [imagematching@uvic.ca](mailto:imagematching@uvic.ca) for the
 password (please account for short delays in answering and uploading close the
 deadline).
